@@ -1,0 +1,84 @@
+ImageTrace — Third-Party Software and License Notices
+=====================================================
+
+ImageTrace 0.1.0 is built using the following third-party open-source components.
+Please retain this file with any distribution of the portable Windows package.
+
+-------------------------------------------------------------------------------
+1. PySide6 / Qt for Python (version 6.12.0) & shiboken6
+-------------------------------------------------------------------------------
+License: GNU Lesser General Public License v3.0 (LGPL-3.0) / GPL
+Project: https://wiki.qt.io/Qt_for_Python
+License text: https://www.gnu.org/licenses/lgpl-3.0.html
+
+LGPL-3.0 Dynamic Linking Notice:
+ImageTrace is distributed as a PyInstaller one-directory bundle so the Qt and
+PySide6 shared libraries inside `_internal\PySide6\` remain dynamically linked
+and can be replaced by the user with compatible LGPL-3.0 builds.
+
+-------------------------------------------------------------------------------
+2. Pillow (version 13.0.0)
+-------------------------------------------------------------------------------
+License: MIT-CMU (Historical Permission Notice and Disclaimer)
+Project: https://python-pillow.org/
+Copyright (c) 1997-2011 by Secret Labs AB; Copyright (c) 1995-2011 by Fredrik
+Lundh and contributors; Copyright (c) 2010-2026 by Jeffrey A. Clark and
+contributors.
+
+-------------------------------------------------------------------------------
+3. ReportLab (version 5.1.0)
+-------------------------------------------------------------------------------
+License: BSD 3-Clause License
+Project: https://www.reportlab.com/
+Copyright (c) ReportLab Europe Ltd. 2000-2026.
+
+-------------------------------------------------------------------------------
+4. charset-normalizer (version 3.5.3, dependency of ReportLab)
+-------------------------------------------------------------------------------
+License: MIT License
+Project: https://github.com/jawah/charset_normalizer
+
+-------------------------------------------------------------------------------
+5. cryptography (version 50.0.2)
+-------------------------------------------------------------------------------
+License: Dual-licensed under Apache License 2.0 or BSD 3-Clause License
+Project: https://cryptography.io/
+Includes OpenSSL cryptographic primitives compiled into the wheel.
+
+-------------------------------------------------------------------------------
+6. cffi (version 2.1.1) & pycparser (version 3.12)
+-------------------------------------------------------------------------------
+cffi License: MIT License (https://cffi.readthedocs.io/)
+pycparser License: BSD 3-Clause License (https://github.com/eliben/pycparser)
+
+-------------------------------------------------------------------------------
+7. ExifTool by Phil Harvey (version 13.64, bundled when included)
+-------------------------------------------------------------------------------
+License: Perl Artistic License / GNU General Public License v1 or later
+Project & source code: https://exiftool.org/
+Copyright (c) 2003-2026 Phil Harvey.
+ExifTool is invoked strictly as a separate external CLI subprocess (`exiftool.exe`)
+with no linking into ImageTrace.
+
+-------------------------------------------------------------------------------
+8. Tesseract OCR (optional, user-installed separately)
+-------------------------------------------------------------------------------
+License: Apache License 2.0
+Project: https://github.com/tesseract-ocr/tesseract
+Windows builds: https://github.com/UB-Mannheim/tesseract/wiki
+ImageTrace does not bundle Tesseract or download language packs automatically;
+see `docs/user-guide/ocr-setup.md`.
+
+-------------------------------------------------------------------------------
+9. PyInstaller (version 6.22.3, packaging tool / bootloader)
+-------------------------------------------------------------------------------
+License: GNU General Public License v2.0 with the PyInstaller Bootloader
+Exception (allowing distribution of applications packaged with the unmodified
+PyInstaller bootloader under their own license terms).
+Project: https://pyinstaller.org/
+
+-------------------------------------------------------------------------------
+10. Python Runtime (CPython 3.12.10) & SQLite (3.49.1)
+-------------------------------------------------------------------------------
+Python License: Python Software Foundation License Version 2
+SQLite License: Public Domain (https://www.sqlite.org/copyright.html)

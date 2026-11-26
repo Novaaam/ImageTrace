@@ -1,0 +1,26 @@
+# --- Never commit evidence, case data, databases, logs or backups ---
+data/
+# machine-local data-root choice
+imagetrace.local.json
+imagetrace.local.json.tmp
+
+# --- Environments, caches, build output ---
+venv/
+.cache/
+build/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.spec.bak
+
+# --- Third-party binaries (documented in tools/third-party/README.md, not committed) ---
+tools/third-party/*
+!tools/third-party/README.md
+
+# --- OS / editor ---
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
